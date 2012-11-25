@@ -4,7 +4,7 @@ php-cachedf
 A PHP library to speed-up your site
 
 ##How this works?
-when you call a function cached, we will save the return associating with: 
+when you call a cached function, we'll save the return associating with: 
 * the arguments values
 * the name of function
 * the file of function

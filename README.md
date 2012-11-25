@@ -1,8 +1,7 @@
 php-cachedf
 ===========
-
 A PHP library to speed-up your site
-
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/bee7fdefe6520c324193c670d742f892 "githalytics.com")](http://githalytics.com/loureirorg/php-cachedf.git)
 ##How this works?
 when you call a cached function, we'll save the return associating with: 
 * the arguments values

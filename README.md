@@ -1,7 +1,7 @@
 php-cachedf
 ===========
 A PHP accelerator
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/d550557bc8d2922c15da7d88dfc9882c "githalytics.com")](http://githalytics.com/loureirorg/php-pshack)
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/42e4fff8057d7da519432a59d007cfc2 "githalytics.com")](http://githalytics.com/loureirorg/php-cachedf)
 ##How this works?
 php-cachedf speeds up your site by caching expensive functions. When you call a cached function, we'll save the result and associate it with: 
 * the arguments values

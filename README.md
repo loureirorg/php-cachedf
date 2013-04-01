@@ -9,7 +9,7 @@ PHP cachedf speeds up your site by caching expensive functions. When you call a 
 * the file of function
 * others variables (user-defined)
 
-when you call again this function (even by other php, client, day) we get the return cached. You always can invalidate a data (or group of data) by calling "flush_cache" with the appropriate arguments.
+when you call again this function (even by other php, client, day) we'll get the cached result. You always can invalidate a data (or a group of function) by calling "cachedf_flush" with the appropriate arguments.
 
 ##When NOT to use
 * DON'T use: in functions which makes data updates (databases, variables, etc);

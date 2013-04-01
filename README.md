@@ -1,6 +1,6 @@
 php-cachedf
 ===========
-A PHP library to speed-up your site
+A PHP accelerator
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/bee7fdefe6520c324193c670d742f892 "githalytics.com")](http://githalytics.com/loureirorg/php-cachedf.git)
 ##How this works?
 when you call a cached function, we'll save the return associating with: 
@@ -27,5 +27,5 @@ if (cachedf()) return cachedf_val();
 ```
 
 ##Features:
-* memcached based
+* apc based
 * data group control

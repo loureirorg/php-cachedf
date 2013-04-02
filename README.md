@@ -44,6 +44,6 @@ function sum($a, $b)
     return  $a + $b;
 }
 
-echo sum(10, 20). "<br />"; // without cache: benchmarked time for this will 2.0001 sec
-echo sum(10, 20). "<br />"; // with cache: benchmarked time for this will be 0.0001 sec
+echo sum(10, 20). "<br />"; // without cache: this will take 2.0001 sec
+echo sum(10, 20). "<br />"; // with cache: this will take 0.0001 sec
 ```

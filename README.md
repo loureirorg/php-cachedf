@@ -2,21 +2,21 @@
 A PHP accelerator
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/42e4fff8057d7da519432a59d007cfc2 "githalytics.com")](http://githalytics.com/loureirorg/php-cachedf)
 ##How this works?
-php-cachedf speeds up your site by caching expensive functions. When you call a cached function, we'll save the result and associate it with: 
+php-cachedf speeds up your php code by caching expensive functions. When you call a cached function, php-cachedf will save the result and associate it with: 
   * arguments
   * name of function
-  * file (name and inode) of function
+  * the file (name and inode) where the function resides
   * user-defined variables (vars that you use inside the function and which will affect the result)
 
-when you call again this function (even by other php, client, day) we'll get the cached result. You always can invalidate a data (or a group of data) by calling "cachedf_flush" with the appropriate arguments.
+the next time this function is called, cachedf will return the cached result. You always can invalidate a data (or a group of data) by calling "cachedf_flush".
 
 ##When NOT to use:
   * DON'T use: in functions which makes data updates (databases, variables, etc);
   * DON'T use: in functions which write data to stdout ("printf", "echo", ...) or send data to any resource (like files);
   * DON'T use (or use with care): in functions that return sensible information (like user profile);
-  * DON'T use: in fast functions because this library has overhead so, if you do your site will slow-down;
+  * DON'T use: in fast functions because this library has overhead so, if you do, your code will actually slow-down;
 
-ALWAYS keep in mind that cachedf will cache the "return" of function
+**ALWAYS keep in mind that cachedf will cache the "return" of function**
 
 ##How-to use:
   * include "cachedf.php"
@@ -27,7 +27,7 @@ if (cachedf()) return cachedf_val();
 
 ##Features:
   * apc based
-  * data group control
+  * groups of cached functions support (to invalidate all at once)
 
 ##Example:
 ```php

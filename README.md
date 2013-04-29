@@ -20,14 +20,15 @@ the next time this function is called, cachedf will return the cached result. Yo
 
 ##How-to use:
   * include "cachedf.php"
-  * at first line of your function include this: 
+  * at first line of your function include this:
+
 ```php
 if (cachedf()) return cachedf_val();
 ```
 
 ##Features:
-  * apc based
-  * groups of cached functions support (to invalidate all at once)
+  * APC based
+  * groups of cached functions support (to invalidate all at once ;) )
 
 ##Example:
 ```php
